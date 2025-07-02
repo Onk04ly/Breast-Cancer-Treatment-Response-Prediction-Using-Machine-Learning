@@ -71,8 +71,3 @@ The system employs rigorous evaluation metrics for model assessment. For PCR cla
 
 All evaluation results, including detailed performance visualisations and training logs, are automatically organised by timestamp within the results directory. This systematic organisation ensures complete traceability of all analytical outputs.
 
-## Support and Documentation
-
-This implementation forms part of the COMP3009/COMP4139 Machine Learning coursework. Detailed implementation specifications can be found within the inline documentation of each module.
-
-The system has been designed with comprehensive error handling and logging capabilities to facilitate troubleshooting and ensure robust operation in various scenarios. Each module contains extensive documentation explaining its functionality and integration within the broader system architecture.
