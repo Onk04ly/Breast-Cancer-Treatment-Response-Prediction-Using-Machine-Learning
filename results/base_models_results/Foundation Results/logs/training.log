@@ -1,0 +1,110 @@
+2024-12-12 13:12:05,965 - INFO - Starting PCR prediction pipeline in base_train_models mode
+2024-12-12 13:12:05,967 - INFO - Loading training data...
+2024-12-12 13:12:05,978 - WARNING - Validation Warning: Low sample count for class 999: 5
+2024-12-12 13:12:05,978 - INFO - 
+Starting data preprocessing...
+2024-12-12 13:12:06,254 - INFO - 
+Splitting data...
+2024-12-12 13:12:06,257 - INFO - 
+Starting model training in base_train_models mode...
+2024-12-12 13:12:06,257 - INFO - 
+Training base model: logistic_regression
+2024-12-12 13:12:11,625 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\logistic_regression\roc_curve.png
+2024-12-12 13:12:12,439 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\logistic_regression\confusion_matrix.png
+2024-12-12 13:12:12,922 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\logistic_regression\precision_recall_curve.png
+2024-12-12 13:12:13,435 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\logistic_regression\prediction_distribution.png
+2024-12-12 13:12:13,780 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\logistic_regression\comparative_metrics.png
+2024-12-12 13:12:13,780 - INFO - 
+Training base model: random_forest
+2024-12-12 13:12:18,162 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\random_forest\roc_curve.png
+2024-12-12 13:12:18,941 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\random_forest\confusion_matrix.png
+2024-12-12 13:12:19,391 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\random_forest\precision_recall_curve.png
+2024-12-12 13:12:19,877 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\random_forest\prediction_distribution.png
+2024-12-12 13:12:20,462 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\random_forest\comparative_metrics.png
+2024-12-12 13:12:20,462 - INFO - 
+Training base model: gradient_boosting
+2024-12-12 13:12:23,135 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\gradient_boosting\roc_curve.png
+2024-12-12 13:12:24,034 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\gradient_boosting\confusion_matrix.png
+2024-12-12 13:12:24,493 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\gradient_boosting\precision_recall_curve.png
+2024-12-12 13:12:24,928 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\gradient_boosting\prediction_distribution.png
+2024-12-12 13:12:25,277 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\gradient_boosting\comparative_metrics.png
+2024-12-12 13:12:25,277 - INFO - 
+Training base model: hist_gradient_boosting
+2024-12-12 13:12:26,036 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\hist_gradient_boosting\roc_curve.png
+2024-12-12 13:12:26,816 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\hist_gradient_boosting\confusion_matrix.png
+2024-12-12 13:12:27,275 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\hist_gradient_boosting\precision_recall_curve.png
+2024-12-12 13:12:27,749 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\hist_gradient_boosting\prediction_distribution.png
+2024-12-12 13:12:28,101 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\hist_gradient_boosting\comparative_metrics.png
+2024-12-12 13:12:28,101 - INFO - 
+Training base model: lightgbm
+2024-12-12 13:12:29,085 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\lightgbm\roc_curve.png
+2024-12-12 13:12:29,859 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\lightgbm\confusion_matrix.png
+2024-12-12 13:12:30,310 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\lightgbm\precision_recall_curve.png
+2024-12-12 13:12:30,747 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\lightgbm\prediction_distribution.png
+2024-12-12 13:12:31,125 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\lightgbm\comparative_metrics.png
+2024-12-12 13:12:31,125 - INFO - 
+Training base model: xgboost
+2024-12-12 13:12:32,161 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\xgboost\roc_curve.png
+2024-12-12 13:12:33,047 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\xgboost\confusion_matrix.png
+2024-12-12 13:12:33,483 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\xgboost\precision_recall_curve.png
+2024-12-12 13:12:33,936 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\xgboost\prediction_distribution.png
+2024-12-12 13:12:34,307 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\xgboost\comparative_metrics.png
+2024-12-12 13:12:34,307 - INFO - 
+Training base model: catboost
+2024-12-12 13:12:38,556 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\catboost\roc_curve.png
+2024-12-12 13:12:39,323 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\catboost\confusion_matrix.png
+2024-12-12 13:12:39,780 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\catboost\precision_recall_curve.png
+2024-12-12 13:12:40,280 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\catboost\prediction_distribution.png
+2024-12-12 13:12:40,633 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\catboost\comparative_metrics.png
+2024-12-12 13:12:40,634 - INFO - 
+Training base model: svm
+2024-12-12 13:12:41,313 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\svm\roc_curve.png
+2024-12-12 13:12:42,125 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\svm\confusion_matrix.png
+2024-12-12 13:12:42,567 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\svm\precision_recall_curve.png
+2024-12-12 13:12:43,037 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\svm\prediction_distribution.png
+2024-12-12 13:12:43,383 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\svm\comparative_metrics.png
+2024-12-12 13:12:43,383 - INFO - 
+Training base model: neural_network
+2024-12-12 13:12:44,562 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\neural_network\roc_curve.png
+2024-12-12 13:12:45,347 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\neural_network\confusion_matrix.png
+2024-12-12 13:12:45,910 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\neural_network\precision_recall_curve.png
+2024-12-12 13:12:46,386 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\neural_network\prediction_distribution.png
+2024-12-12 13:12:46,743 - INFO - Plot saved: results\base_models_results\20241212_131205\base_results\neural_network\comparative_metrics.png
+2024-12-12 13:12:46,748 - INFO - Results saved to results/base_models_results//results.joblib
+2024-12-12 13:12:46,748 - INFO - 
+Generating final predictions...
+2024-12-12 13:12:46,748 - INFO - 
+Model Performance Summary:
+2024-12-12 13:12:46,748 - INFO - logistic_regression (smote): 0.6115
+2024-12-12 13:12:46,748 - INFO - logistic_regression (no_smote): 0.5954
+2024-12-12 13:12:46,748 - INFO - random_forest (smote): 0.5745
+2024-12-12 13:12:46,749 - INFO - random_forest (no_smote): 0.4839
+2024-12-12 13:12:46,749 - INFO - gradient_boosting (smote): 0.5157
+2024-12-12 13:12:46,749 - INFO - gradient_boosting (no_smote): 0.5479
+2024-12-12 13:12:46,749 - INFO - hist_gradient_boosting (smote): 0.5745
+2024-12-12 13:12:46,749 - INFO - hist_gradient_boosting (no_smote): 0.5398
+2024-12-12 13:12:46,749 - INFO - lightgbm (smote): 0.6039
+2024-12-12 13:12:46,749 - INFO - lightgbm (no_smote): 0.5237
+2024-12-12 13:12:46,749 - INFO - xgboost (smote): 0.5878
+2024-12-12 13:12:46,749 - INFO - xgboost (no_smote): 0.5318
+2024-12-12 13:12:46,749 - INFO - catboost (smote): 0.5583
+2024-12-12 13:12:46,749 - INFO - catboost (no_smote): 0.4839
+2024-12-12 13:12:46,749 - INFO - svm (smote): 0.6091
+2024-12-12 13:12:46,749 - INFO - svm (no_smote): 0.5000
+2024-12-12 13:12:46,749 - INFO - neural_network (smote): 0.5664
+2024-12-12 13:12:46,749 - INFO - neural_network (no_smote): 0.5157
+2024-12-12 13:12:46,749 - INFO - 
+Best performing model: logistic_regression with smote
+2024-12-12 13:12:46,750 - INFO - Balanced Accuracy: 0.6115
+2024-12-12 13:12:46,750 - INFO - 
+Best model metrics:
+2024-12-12 13:12:46,750 - INFO - balanced_accuracy: 0.6115
+2024-12-12 13:12:46,750 - INFO - accuracy: 0.6582
+2024-12-12 13:12:46,750 - INFO - sensitivity: 0.5294
+2024-12-12 13:12:46,750 - INFO - specificity: 0.6935
+2024-12-12 13:12:46,750 - INFO - precision: 0.3214
+2024-12-12 13:12:46,750 - INFO - npv: 0.8431
+2024-12-12 13:12:46,750 - INFO - f1: 0.4000
+2024-12-12 13:12:46,750 - INFO - auc_roc: 0.6490
+2024-12-12 13:12:46,753 - INFO - Predictions saved to results\base_models_results\20241212_131205\PCRPrediction.csv
+2024-12-12 13:12:46,754 - INFO - Pipeline completed successfully!

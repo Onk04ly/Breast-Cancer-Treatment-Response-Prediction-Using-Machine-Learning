@@ -1,0 +1,63 @@
+Run timestamp: 20241212_180422
+Training mode: best_train_model
+Dataset shape: (400, 121)
+Preprocessing steps: 1. missing_values_handling: Replaced 999 with NaN and filled numeric missings. Initial missing: 5, Final missing: 0
+2. outlier_handling: Removed 2076 outliers using IQR method
+3. normalization: Normalized 120 numeric features
+4. mandatory_feature_selection: Selected 8 mandatory features
+5. pca_transformation: Reduced 107 features to 13 components, explaining 95.64% of variance
+6. correlation_analysis: Removed 0 features with correlation > 0.9
+
+Results summary:
+
+logistic_regression:
+  balanced_accuracy: 0.5787
+  accuracy: 0.5063
+  sensitivity: 0.7059
+  specificity: 0.4516
+  precision: 0.2609
+  npv: 0.8485
+  f1: 0.3810
+  auc_roc: 0.6556
+
+Best parameters:
+  classifier__C: 0.03
+  classifier__class_weight: {0: 1, 1: 2}
+  classifier__fit_intercept: True
+  classifier__l1_ratio: 0.2
+  classifier__penalty: elasticnet
+  classifier__solver: saga
+  classifier__tol: 1e-05
+
+Performance Comparison:
+Previous HP tuning balanced accuracy: 0.6380
+Current deep tuning balanced accuracy: 0.5787
+Improvement: -9.29%
+
+Training Configuration:
+Parameter grids tested:
+
+Grid 1:
+  classifier__C: [0.001, 0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.05, 0.1]
+  classifier__penalty: ['l1']
+  classifier__solver: ['liblinear']
+  classifier__class_weight: ['balanced', {0: 1, 1: 2}, {0: 1, 1: 3}, {0: 1.5, 1: 2}]
+  classifier__fit_intercept: [True]
+  classifier__tol: [1e-05, 0.0001, 0.001]
+
+Grid 2:
+  classifier__C: [0.001, 0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.05, 0.1]
+  classifier__penalty: ['l2']
+  classifier__solver: ['liblinear']
+  classifier__class_weight: ['balanced', {0: 1, 1: 2}, {0: 1, 1: 3}, {0: 1.5, 1: 2}]
+  classifier__fit_intercept: [True]
+  classifier__tol: [1e-05, 0.0001, 0.001]
+
+Grid 3:
+  classifier__C: [0.001, 0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.05, 0.1]
+  classifier__penalty: ['elasticnet']
+  classifier__solver: ['saga']
+  classifier__class_weight: ['balanced', {0: 1, 1: 2}, {0: 1, 1: 3}, {0: 1.5, 1: 2}]
+  classifier__fit_intercept: [True]
+  classifier__tol: [1e-05, 0.0001, 0.001]
+  classifier__l1_ratio: [0.2, 0.4, 0.6, 0.8]

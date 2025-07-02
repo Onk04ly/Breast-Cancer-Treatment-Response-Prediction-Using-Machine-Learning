@@ -1,0 +1,21 @@
+Run timestamp: 20241212_201927
+Training mode: best_saved_model
+Dataset shape: (400, 121)
+Preprocessing steps: 1. missing_values_handling: Replaced 999 with NaN and filled numeric missings. Initial missing: 5, Final missing: 0
+2. outlier_handling: Removed 2076 outliers using IQR method
+3. normalization: Normalized 120 numeric features
+4. mandatory_feature_selection: Selected 8 mandatory features
+5. pca_transformation: Reduced 107 features to 13 components, explaining 95.64% of variance
+6. correlation_analysis: Removed 0 features with correlation > 0.9
+
+Results summary:
+
+logistic_regression:
+  balanced_accuracy: 0.6380
+  accuracy: 0.6329
+  sensitivity: 0.6471
+  specificity: 0.6290
+  precision: 0.3235
+  npv: 0.8667
+  f1: 0.4314
+  auc_roc: 0.6565

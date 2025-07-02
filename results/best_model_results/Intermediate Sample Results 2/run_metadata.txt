@@ -1,0 +1,79 @@
+Run timestamp: 20241212_184654
+Training mode: best_train_model
+Dataset shape: (400, 121)
+Preprocessing steps: 1. missing_values_handling: Replaced 999 with NaN and filled numeric missings. Initial missing: 5, Final missing: 0
+2. outlier_handling: Removed 2076 outliers using IQR method
+3. normalization: Normalized 120 numeric features
+4. mandatory_feature_selection: Selected 8 mandatory features
+5. pca_transformation: Reduced 107 features to 13 components, explaining 95.64% of variance
+6. correlation_analysis: Removed 0 features with correlation > 0.9
+
+Results summary:
+
+logistic_regression:
+  balanced_accuracy: 0.6380
+  accuracy: 0.6329
+  sensitivity: 0.6471
+  specificity: 0.6290
+  precision: 0.3235
+  npv: 0.8667
+  f1: 0.4314
+  auc_roc: 0.6565
+
+Best parameters:
+  classifier__C: 0.015
+  classifier__class_weight: balanced
+  classifier__fit_intercept: True
+  classifier__penalty: l2
+  classifier__solver: liblinear
+  classifier__tol: 0.0001
+
+Performance Comparison:
+Previous HP tuning balanced accuracy: 0.6380
+Current deep tuning balanced accuracy: 0.6380
+Improvement: +0.01%
+
+Training Configuration:
+Parameter grids tested:
+
+Grid 1:
+  classifier__C: [0.01, 0.012, 0.015]
+  classifier__penalty: ['l2']
+  classifier__solver: ['liblinear']
+  classifier__class_weight: ['balanced']
+  classifier__fit_intercept: [True]
+  classifier__tol: [0.0001]
+
+Grid 2:
+  classifier__C: [0.01, 0.012, 0.015]
+  classifier__penalty: ['elasticnet']
+  classifier__solver: ['saga']
+  classifier__class_weight: ['balanced']
+  classifier__fit_intercept: [True]
+  classifier__tol: [0.0001]
+  classifier__l1_ratio: [0.15, 0.2, 0.25]
+
+Grid 3:
+  classifier__C: [0.01, 0.012, 0.015]
+  classifier__penalty: ['l2']
+  classifier__solver: ['liblinear']
+  classifier__class_weight: ['balanced', {0: 1.2, 1: 1.8}]
+  classifier__fit_intercept: [True]
+  classifier__tol: [0.0001]
+
+Grid 4:
+  classifier__C: [0.005, 0.007, 0.01]
+  classifier__penalty: ['elasticnet']
+  classifier__solver: ['saga']
+  classifier__class_weight: ['balanced']
+  classifier__fit_intercept: [True]
+  classifier__tol: [0.0001]
+  classifier__l1_ratio: [0.2]
+
+Grid 5:
+  classifier__C: [0.005, 0.007, 0.01]
+  classifier__penalty: ['l2']
+  classifier__solver: ['liblinear']
+  classifier__class_weight: ['balanced']
+  classifier__fit_intercept: [True]
+  classifier__tol: [0.0001]

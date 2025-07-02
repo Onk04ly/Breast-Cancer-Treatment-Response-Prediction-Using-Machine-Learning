@@ -1,0 +1,191 @@
+Run timestamp: 20241212_131205
+Training mode: base_train_models
+Dataset shape: (400, 121)
+Preprocessing steps: 1. missing_values_handling: Replaced 999 with NaN and filled numeric missings. Initial missing: 5, Final missing: 0
+2. outlier_handling: Removed 2076 outliers using IQR method
+3. normalization: Normalized 120 numeric features
+4. mandatory_feature_selection: Selected 8 mandatory features
+5. pca_transformation: Reduced 107 features to 13 components, explaining 95.64% of variance
+6. correlation_analysis: Removed 0 features with correlation > 0.9
+
+Results summary:
+
+logistic_regression:
+  no_smote:
+    balanced_accuracy: 0.5954
+    accuracy: 0.6329
+    sensitivity: 0.5294
+    specificity: 0.6613
+    precision: 0.3000
+    npv: 0.8367
+    f1: 0.3830
+    auc_roc: 0.6214
+  smote:
+    balanced_accuracy: 0.6115
+    accuracy: 0.6582
+    sensitivity: 0.5294
+    specificity: 0.6935
+    precision: 0.3214
+    npv: 0.8431
+    f1: 0.4000
+    auc_roc: 0.6490
+
+random_forest:
+  no_smote:
+    balanced_accuracy: 0.4839
+    accuracy: 0.7595
+    sensitivity: 0.0000
+    specificity: 0.9677
+    precision: 0.0000
+    npv: 0.7792
+    f1: 0.0000
+    auc_roc: 0.6148
+  smote:
+    balanced_accuracy: 0.5745
+    accuracy: 0.7342
+    sensitivity: 0.2941
+    specificity: 0.8548
+    precision: 0.3571
+    npv: 0.8154
+    f1: 0.3226
+    auc_roc: 0.6613
+
+gradient_boosting:
+  no_smote:
+    balanced_accuracy: 0.5479
+    accuracy: 0.7595
+    sensitivity: 0.1765
+    specificity: 0.9194
+    precision: 0.3750
+    npv: 0.8028
+    f1: 0.2400
+    auc_roc: 0.6917
+  smote:
+    balanced_accuracy: 0.5157
+    accuracy: 0.7089
+    sensitivity: 0.1765
+    specificity: 0.8548
+    precision: 0.2500
+    npv: 0.7910
+    f1: 0.2069
+    auc_roc: 0.6774
+
+hist_gradient_boosting:
+  no_smote:
+    balanced_accuracy: 0.5398
+    accuracy: 0.7468
+    sensitivity: 0.1765
+    specificity: 0.9032
+    precision: 0.3333
+    npv: 0.8000
+    f1: 0.2308
+    auc_roc: 0.5740
+  smote:
+    balanced_accuracy: 0.5745
+    accuracy: 0.7342
+    sensitivity: 0.2941
+    specificity: 0.8548
+    precision: 0.3571
+    npv: 0.8154
+    f1: 0.3226
+    auc_roc: 0.6053
+
+lightgbm:
+  no_smote:
+    balanced_accuracy: 0.5237
+    accuracy: 0.7215
+    sensitivity: 0.1765
+    specificity: 0.8710
+    precision: 0.2727
+    npv: 0.7941
+    f1: 0.2143
+    auc_roc: 0.6157
+  smote:
+    balanced_accuracy: 0.6039
+    accuracy: 0.7468
+    sensitivity: 0.3529
+    specificity: 0.8548
+    precision: 0.4000
+    npv: 0.8281
+    f1: 0.3750
+    auc_roc: 0.6603
+
+xgboost:
+  no_smote:
+    balanced_accuracy: 0.5318
+    accuracy: 0.7342
+    sensitivity: 0.1765
+    specificity: 0.8871
+    precision: 0.3000
+    npv: 0.7971
+    f1: 0.2222
+    auc_roc: 0.5797
+  smote:
+    balanced_accuracy: 0.5878
+    accuracy: 0.7215
+    sensitivity: 0.3529
+    specificity: 0.8226
+    precision: 0.3529
+    npv: 0.8226
+    f1: 0.3529
+    auc_roc: 0.6537
+
+catboost:
+  no_smote:
+    balanced_accuracy: 0.4839
+    accuracy: 0.7595
+    sensitivity: 0.0000
+    specificity: 0.9677
+    precision: 0.0000
+    npv: 0.7792
+    f1: 0.0000
+    auc_roc: 0.6262
+  smote:
+    balanced_accuracy: 0.5583
+    accuracy: 0.7089
+    sensitivity: 0.2941
+    specificity: 0.8226
+    precision: 0.3125
+    npv: 0.8095
+    f1: 0.3030
+    auc_roc: 0.6641
+
+svm:
+  no_smote:
+    balanced_accuracy: 0.5000
+    accuracy: 0.7848
+    sensitivity: 0.0000
+    specificity: 1.0000
+    precision: 0.0000
+    npv: 0.7848
+    f1: 0.0000
+    auc_roc: 0.6765
+  smote:
+    balanced_accuracy: 0.6091
+    accuracy: 0.7215
+    sensitivity: 0.4118
+    specificity: 0.8065
+    precision: 0.3684
+    npv: 0.8333
+    f1: 0.3889
+    auc_roc: 0.6622
+
+neural_network:
+  no_smote:
+    balanced_accuracy: 0.5157
+    accuracy: 0.7089
+    sensitivity: 0.1765
+    specificity: 0.8548
+    precision: 0.2500
+    npv: 0.7910
+    f1: 0.2069
+    auc_roc: 0.6366
+  smote:
+    balanced_accuracy: 0.5664
+    accuracy: 0.7215
+    sensitivity: 0.2941
+    specificity: 0.8387
+    precision: 0.3333
+    npv: 0.8125
+    f1: 0.3125
+    auc_roc: 0.6442

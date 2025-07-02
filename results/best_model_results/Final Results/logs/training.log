@@ -1,0 +1,15 @@
+2024-12-12 20:19:27,613 - INFO - Starting PCR prediction pipeline in best_saved_model mode
+2024-12-12 20:19:27,614 - INFO - Loading training data...
+2024-12-12 20:19:27,625 - WARNING - Validation Warning: Low sample count for class 999: 5
+2024-12-12 20:19:27,625 - INFO - 
+Starting data preprocessing...
+2024-12-12 20:19:27,908 - INFO - 
+Splitting data...
+2024-12-12 20:19:27,910 - INFO - 
+Starting model training in best_saved_model mode...
+2024-12-12 20:19:28,458 - INFO - Plot saved: results\best_model_results\20241212_201927\best_results\logistic_regression\roc_curve.png
+2024-12-12 20:19:29,284 - INFO - Plot saved: results\best_model_results\20241212_201927\best_results\logistic_regression\confusion_matrix.png
+2024-12-12 20:19:29,756 - INFO - Plot saved: results\best_model_results\20241212_201927\best_results\logistic_regression\precision_recall_curve.png
+2024-12-12 20:19:30,256 - INFO - Plot saved: results\best_model_results\20241212_201927\best_results\logistic_regression\prediction_distribution.png
+2024-12-12 20:19:30,259 - INFO - Predictions saved to results\best_model_results\20241212_201927\PCRPrediction.csv
+2024-12-12 20:19:30,259 - INFO - Pipeline completed successfully!

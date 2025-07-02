@@ -1,0 +1,67 @@
+Run timestamp: 20241212_151019
+Training mode: hp_train_models
+Dataset shape: (400, 121)
+Preprocessing steps: 1. missing_values_handling: Replaced 999 with NaN and filled numeric missings. Initial missing: 5, Final missing: 0
+2. outlier_handling: Removed 2076 outliers using IQR method
+3. normalization: Normalized 120 numeric features
+4. mandatory_feature_selection: Selected 8 mandatory features
+5. pca_transformation: Reduced 107 features to 13 components, explaining 95.64% of variance
+6. correlation_analysis: Removed 0 features with correlation > 0.9
+
+Results summary:
+
+logistic_regression:
+  balanced_accuracy: 0.6139
+  accuracy: 0.5949
+  sensitivity: 0.6471
+  specificity: 0.5806
+  precision: 0.2973
+  npv: 0.8571
+  f1: 0.4074
+  auc_roc: 0.6613
+
+Best parameters:
+  classifier__C: 0.01
+  classifier__class_weight: balanced
+  classifier__penalty: l2
+  classifier__solver: liblinear
+
+svm:
+  balanced_accuracy: 0.6110
+  accuracy: 0.5570
+  sensitivity: 0.7059
+  specificity: 0.5161
+  precision: 0.2857
+  npv: 0.8649
+  f1: 0.4068
+  auc_roc: 0.6632
+
+Best parameters:
+  classifier__C: 1
+  classifier__class_weight: balanced
+  classifier__gamma: 0.001
+  classifier__kernel: rbf
+  classifier__max_iter: 5000
+  classifier__tol: 0.0001
+
+lightgbm:
+  balanced_accuracy: 0.5583
+  accuracy: 0.7089
+  sensitivity: 0.2941
+  specificity: 0.8226
+  precision: 0.3125
+  npv: 0.8095
+  f1: 0.3030
+  auc_roc: 0.6461
+
+Best parameters:
+  classifier__colsample_bytree: 0.8
+  classifier__is_unbalanced: True
+  classifier__learning_rate: 0.05
+  classifier__max_depth: 3
+  classifier__min_child_samples: 20
+  classifier__n_estimators: 500
+  classifier__num_leaves: 15
+  classifier__reg_alpha: 1
+  classifier__reg_lambda: 0.1
+  classifier__subsample: 0.8

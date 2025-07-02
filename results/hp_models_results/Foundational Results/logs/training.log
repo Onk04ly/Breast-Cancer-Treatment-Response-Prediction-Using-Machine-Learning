@@ -1,0 +1,40 @@
+2024-12-12 15:10:19,700 - INFO - Starting PCR prediction pipeline in hp_train_models mode
+2024-12-12 15:10:19,702 - INFO - Loading training data...
+2024-12-12 15:10:19,712 - WARNING - Validation Warning: Low sample count for class 999: 5
+2024-12-12 15:10:19,712 - INFO - 
+Starting data preprocessing...
+2024-12-12 15:10:20,003 - INFO - 
+Splitting data...
+2024-12-12 15:10:20,006 - INFO - 
+Starting model training in hp_train_models mode...
+2024-12-12 15:10:20,006 - INFO - 
+Training HP model: logistic_regression
+2024-12-12 15:10:25,859 - INFO - Plot saved: results\hp_models_results\20241212_151019\hp_results\logistic_regression\roc_curve.png
+2024-12-12 15:10:26,700 - INFO - Plot saved: results\hp_models_results\20241212_151019\hp_results\logistic_regression\confusion_matrix.png
+2024-12-12 15:10:27,165 - INFO - Plot saved: results\hp_models_results\20241212_151019\hp_results\logistic_regression\precision_recall_curve.png
+2024-12-12 15:10:27,636 - INFO - Plot saved: results\hp_models_results\20241212_151019\hp_results\logistic_regression\prediction_distribution.png
+2024-12-12 15:10:27,636 - INFO - 
+Training HP model: svm
+2024-12-12 15:10:29,644 - INFO - Plot saved: results\hp_models_results\20241212_151019\hp_results\svm\roc_curve.png
+2024-12-12 15:10:30,462 - INFO - Plot saved: results\hp_models_results\20241212_151019\hp_results\svm\confusion_matrix.png
+2024-12-12 15:10:30,918 - INFO - Plot saved: results\hp_models_results\20241212_151019\hp_results\svm\precision_recall_curve.png
+2024-12-12 15:10:31,397 - INFO - Plot saved: results\hp_models_results\20241212_151019\hp_results\svm\prediction_distribution.png
+2024-12-12 15:10:31,398 - INFO - 
+Training HP model: lightgbm
+2024-12-12 15:10:45,422 - INFO - Plot saved: results\hp_models_results\20241212_151019\hp_results\lightgbm\roc_curve.png
+2024-12-12 15:10:46,248 - INFO - Plot saved: results\hp_models_results\20241212_151019\hp_results\lightgbm\confusion_matrix.png
+2024-12-12 15:10:46,717 - INFO - Plot saved: results\hp_models_results\20241212_151019\hp_results\lightgbm\precision_recall_curve.png
+2024-12-12 15:10:47,282 - INFO - Plot saved: results\hp_models_results\20241212_151019\hp_results\lightgbm\prediction_distribution.png
+2024-12-12 15:10:47,285 - INFO - Results saved to results/hp_models_results//results.joblib
+2024-12-12 15:10:47,285 - INFO - 
+Generating final predictions...
+2024-12-12 15:10:47,285 - INFO - 
+HP-Tuned Model Performance Summary:
+2024-12-12 15:10:47,285 - INFO - logistic_regression: 0.6139
+2024-12-12 15:10:47,285 - INFO - svm: 0.6110
+2024-12-12 15:10:47,285 - INFO - lightgbm: 0.5583
+2024-12-12 15:10:47,285 - INFO - 
+Best HP-tuned model: logistic_regression
+2024-12-12 15:10:47,285 - INFO - Balanced Accuracy: 0.6139
+2024-12-12 15:10:47,288 - INFO - Predictions saved to results\hp_models_results\20241212_151019\PCRPrediction.csv
+2024-12-12 15:10:47,289 - INFO - Pipeline completed successfully!

@@ -1,0 +1,70 @@
+Run timestamp: 20241212_154127
+Training mode: hp_train_models
+Dataset shape: (400, 121)
+Preprocessing steps: 1. missing_values_handling: Replaced 999 with NaN and filled numeric missings. Initial missing: 5, Final missing: 0
+2. outlier_handling: Removed 2076 outliers using IQR method
+3. normalization: Normalized 120 numeric features
+4. mandatory_feature_selection: Selected 8 mandatory features
+5. pca_transformation: Reduced 107 features to 13 components, explaining 95.64% of variance
+6. correlation_analysis: Removed 0 features with correlation > 0.9
+
+Results summary:
+
+logistic_regression:
+  balanced_accuracy: 0.6380
+  accuracy: 0.6329
+  sensitivity: 0.6471
+  specificity: 0.6290
+  precision: 0.3235
+  npv: 0.8667
+  f1: 0.4314
+  auc_roc: 0.6565
+
+Best parameters:
+  classifier__C: 0.015
+  classifier__class_weight: balanced
+  classifier__fit_intercept: True
+  classifier__penalty: l2
+  classifier__solver: liblinear
+  classifier__tol: 0.0001
+
+svm:
+  balanced_accuracy: 0.6110
+  accuracy: 0.5570
+  sensitivity: 0.7059
+  specificity: 0.5161
+  precision: 0.2857
+  npv: 0.8649
+  f1: 0.4068
+  auc_roc: 0.6632
+
+Best parameters:
+  classifier__C: 1
+  classifier__class_weight: balanced
+  classifier__gamma: 0.001
+  classifier__kernel: rbf
+  classifier__max_iter: 5000
+  classifier__tol: 0.0001
+
+lightgbm:
+  balanced_accuracy: 0.5607
+  accuracy: 0.6456
+  sensitivity: 0.4118
+  specificity: 0.7097
+  precision: 0.2800
+  npv: 0.8148
+  f1: 0.3333
+  auc_roc: 0.6442
+
+Best parameters:
+  classifier__boosting_type: dart
+  classifier__colsample_bytree: 0.9
+  classifier__learning_rate: 0.03
+  classifier__max_depth: 4
+  classifier__min_child_samples: 20
+  classifier__n_estimators: 1000
+  classifier__num_leaves: 23
+  classifier__reg_alpha: 0.5
+  classifier__reg_lambda: 0.3
+  classifier__scale_pos_weight: 3
+  classifier__subsample: 0.8

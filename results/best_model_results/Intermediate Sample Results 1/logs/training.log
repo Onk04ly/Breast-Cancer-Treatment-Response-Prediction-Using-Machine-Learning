@@ -1,0 +1,24 @@
+2024-12-12 18:28:58,265 - INFO - Starting PCR prediction pipeline in best_train_model mode
+2024-12-12 18:28:58,266 - INFO - Loading training data...
+2024-12-12 18:28:58,277 - WARNING - Validation Warning: Low sample count for class 999: 5
+2024-12-12 18:28:58,277 - INFO - 
+Starting data preprocessing...
+2024-12-12 18:28:58,563 - INFO - 
+Splitting data...
+2024-12-12 18:28:58,566 - INFO - 
+Starting model training in best_train_model mode...
+2024-12-12 18:28:58,566 - INFO - 
+Training best model: logistic_regression
+2024-12-12 18:28:58,566 - INFO - 
+Testing parameter grid 1 of 3
+2024-12-12 18:29:04,569 - INFO - Grid 1 best score: 0.6592
+2024-12-12 18:29:04,569 - INFO - 
+Testing parameter grid 2 of 3
+2024-12-12 18:29:04,902 - INFO - Grid 2 best score: 0.6865
+2024-12-12 18:29:04,903 - INFO - 
+Testing parameter grid 3 of 3
+2024-12-12 18:29:06,014 - INFO - Grid 3 best score: 0.6899
+2024-12-12 18:29:06,027 - INFO - Best model saved to trained_models\logistic_regression.joblib
+2024-12-12 18:29:06,028 - INFO - Results saved to results\best_model_results\results.joblib
+2024-12-12 18:29:06,033 - INFO - Predictions saved to results\best_model_results\20241212_182858\PCRPrediction.csv
+2024-12-12 18:29:06,033 - INFO - Pipeline completed successfully!
